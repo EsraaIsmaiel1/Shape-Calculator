@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;500;600&display=swap"
+        rel="stylesheet">
+    <title>Shape Calculator</title>
+</head>
+
+<body>
+    <h1>Shape Calculator</h1>
+    <p>Enter the dimensions of the shape you want to calculate and click the corresponding buttons.</p>
+    <form id="triangle-form">
+        <h2>Triangle</h2>
+        <label for="side-a">Side A:</label>
+        <input type="number" id="side-a" name="side-a" min="0" required>
+        <label for="side-b">Side B:</label>
+        <input type="number" id="side-b" name="side-b" min="0" required>
+        <button type="button" id="triangle-area">Calculate Area</button>
+        <button type="button" id="triangle-perimeter">Calculate Perimeter</button>
+        <p id="triangle-result"></p>
+    </form>
+
+    <form id="square-form">
+        <h2>Square</h2>
+        <label for="side">Side:</label>
+        <input type="number" id="side" name="side" min="0" required>
+        <button type="button" id="square-area">Calculate Area</button>
+        <button type="button" id="square-perimeter">Calculate Perimeter</button>
+        <p id="square-result"></p>
+    </form>
+
+    <form id="circle-form">
+        <h2>Circle</h2>
+        <label for="radius">Radius:</label>
+        <input type="number" id="radius" name="radius" min="0" required>
+        <button type="button" id="circle-area">Calculate Area</button>
+        <button type="button" id="circle-perimeter">Calculate Perimeter</button>
+        <p id="circle-result"></p>
+    </form>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
